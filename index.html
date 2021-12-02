@@ -1,14 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dario-Feldman</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 </head>
+
 <body>
-    <h1>Mi pagina web</h1>
-    
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon"></span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Me</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Skills</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Portfolio</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Others</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header class="principal">
+
+        <div class="container-fluid">
+            <!-- Title -->
+
+            <div class="row">
+
+                <div class="col-lg-6 presentacion">
+                    <h1 class="title">Hi, am Dario Feldman</h1>
+                    <h1 class="sub-title mecano">a Developer!<span>&nbsp;</span></h1>
+                </div>
+
+                <div class="col-lg-6 animacion">
+                    <div class="containerA">
+                        <div class="loader">
+                            <div class="ball"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="white-section" id="features">
+
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="feature-box col-lg-4">
+                    <i class="icon fas fa-check-circle fa-4x"></i>
+                    <h3 class="feature-title">Easy to use.</h3>
+                    <p>So easy to use, even your dog could do it.</p>
+                </div>
+
+                <div class="feature-box col-lg-4">
+                    <i class="icon fas fa-bullseye fa-4x"></i>
+                    <h3 class="feature-title">Elite Clientele</h3>
+                    <p>We have all the dogs, the greatest dogs.</p>
+                </div>
+
+                <div class="feature-box col-lg-4">
+                    <i class="icon fas fa-heart fa-4x"></i>
+                    <h3 class="feature-title">Guaranteed to work.</h3>
+                    <p>Find the love of your dog's life or your money back.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="container-fluid section-about">
+        <div class="title-2">
+            <h2 class="heading-secondary">
+                About Me
+            </h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="heading-tertiary u-margin-bottom-s">You're going to fall in love with nature</h3>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusamus dicta,
+                    repudiandae eligendi mollitia ipsam repellat aliquam, eos error impedit distinctio adipisci cumque
+                    recusandae nihil sunt dolores doloribus. Et, cum?</p>
+
+                <h3 class="heading-tertiary u-margin-bottom-s">Live adventures like you never have before</h3>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ratione facilis
+                    dignissimos libero possimus voluptatem tenetur nam doloremque assumenda.</p>
+
+                <a href="#" class="btn-text">Learn more &rarr;</a>
+
+            </div>
+
+            <div class="col-lg-6">
+                <div class="composition">
+
+                    <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                        sizes="(max-width= 56.25em) 20vw, (max-width= 37.5em) 30vw, 300px" src="img/nat-1-large.jpg"
+                        alt="photo 1" class="composition__photo composition__photo--p1">
+
+                    <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                        sizes="(max-width= 56.25em) 20vw, (max-width= 37.5em) 30vw, 300px" src="img/nat-2-large.jpg"
+                        alt="photo 2" class="composition__photo composition__photo--p2">
+
+                    <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                        sizes="(max-width= 56.25em) 20vw, (max-width= 37.5em) 30vw, 300px" src="img/nat-3-large.jpg"
+                        alt="photo 3" class="composition__photo composition__photo--p3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
